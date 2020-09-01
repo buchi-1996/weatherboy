@@ -4,11 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My JavaScript App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>weatherboy</title>
 </head>
-<body>
-  <h1>My JavaScript App</h1>
-  <p>This app was compiled using the Babel Webpack Starter Pack which can compile ES2015, ES2016 and ES2017 code including Async/Await</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-10 mx-auto p-0">
+      <div class="card">
+        <img src="assets/img/Ripple-1s-200px.gif" alt="" id="img__loader">
+        <div class="card-header">
+          <h4>Weatherboy</h4>
+          <form class="search__box">
+            <input type="search" id="search" placeholder="Boston..." class="form-control">
+            <button type="submit" id="submit__btn"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="card-body">
+          <h1 class="city__name text-center text-capitalize"></h1>
+          <h5 class="app__date text-center text-capitalize"></h5>
+          <div class="weather__container">
+            <h3 class="weather__result text-center"></h3>
+            <div class="weather__icon">
+              <img src="" alt="">
+              <p class="feels__like text-capitalize"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <div class="wind">
+            <span>Wind</span>
+            <h4>13 km/h</h4>
+          </div>
+          <div class="rain">
+            <span>Feels like</span>
+            <h4>0%</h4>
+          </div>
+          <div class="humidity">
+            <span>Humidity</span>
+            <h4>88%</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="btn btn-info btn-sm w-100 alert empty__field font-weight-bold"></div>
+<div class="btn btn-danger w-100 alert wrong__city font-weight-bold"></div>
   
   <script src="build/app.bundle.js"></script>
 </body>

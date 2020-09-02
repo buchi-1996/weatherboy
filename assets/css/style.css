@@ -14,6 +14,9 @@
   
   body{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Nunito Sans', sans-serif;
     background: url(../img/a_38_20140127223707.jpg)center/cover no-repeat;
     min-height: 100vh;
@@ -21,7 +24,6 @@
   
   .card{
     position: relative;
-    margin-top: 50px;
     background:rgba(85, 71, 71, 0.253);
     color: #fff;
   }
@@ -181,6 +183,14 @@
       color: #fff;
     }
   
+    .card-body .city__name{
+      font-size: 2rem;
+    }
+
+    .card-body .app__date{
+      font-size: 1rem;
+    }
+    
     .weather__container{
       margin-top: 20px;
       flex-direction: column;

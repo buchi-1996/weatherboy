@@ -4,8 +4,7 @@ import ui from './UI';
 import myStore from './Storage';
 
 class App{
-    constructor(city){
-        this.city = city;
+    constructor(){
         this.loader = document.querySelector('#img__loader');
     }
 
